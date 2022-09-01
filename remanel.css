@@ -1,0 +1,483 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+  letter-spacing: 1px;
+}
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  position: fixed;
+  top: 0%;
+  z-index: 1;
+  background:  linear-gradient(145deg, rgb(156, 91, 118)0%, rgba(110, 116, 142, 1)90%);
+}
+.logo img {
+  max-width: 150px;
+  cursor: pointer;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0px 10px 0px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  transition: 0.5s ease;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+  color: goldenrod;
+}
+.btnH {
+	animation: slideIn 1s alternate;
+}
+.btnE,
+.btnH {
+	font-size: 1rem;
+	text-decoration: none;
+	padding: 8px 12px;
+	border-radius: 5px;
+	font-weight: bold;
+	color: rgba(17, 6, 8, 0.698);
+	background-color: rgba(255, 213, 107, 0.955);
+	transition: 1s ease;
+}
+.btnE:hover,
+.btnH:hover {
+	background-color: rgba(255, 183, 0, 0.955);
+}
+@keyframes slideIn {
+	from{
+		transform: translateX(100px);
+	}
+	to{
+		transform: translateX(0px);
+	}
+}
+.hero-section {
+  width: 100%;
+  height: 70vh;
+  margin-top: 72px;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(Images/george.jpg);
+  background-position: center;
+  background-size: cover;
+  border-bottom-right-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  animation: moveDown 1.5s ease-in-out forwards;
+}
+@keyframes moveDown {
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+.hero-section-text {
+	color: white;
+}
+.hero-section-text h1 {
+	font-size: 1.5rem;
+	padding: 10px 0px;
+}
+.hero-section-text p {
+	color: rgba(255, 255, 255, 0.988);
+	font-size: 1rem;
+	max-width: 650px;
+	margin: 0 auto;
+	line-height: 25px;
+	padding: 15px 0px 35px;
+	font-weight: 500;
+}
+
+.fa-angle-down{
+	font-size: 2rem;
+	color: white;
+	margin-top: 60px;
+	animation: upDown 0.7s ease infinite alternate-reverse;
+}
+@keyframes upDown {
+	from{
+		transform: translateY(10px);
+	}
+	to{
+		transform: translateY(-10px);
+	}
+}
+
+
+nav .fa-times{
+	display: none;
+	color: white;
+	font-size: 1.5rem;
+	padding: 20px 20px 0px;
+}
+#menuIcon{
+  display: none;
+	padding: 10px;
+	border-radius: 5px;
+}
+#menuIcon:hover{
+	background-color: rgba(220, 220, 220, 0.337);
+}
+
+/* first content */
+.container{
+	width: 90%;
+	margin: 0 auto;
+	padding: 50px 0px;
+}
+.fc-header{
+	font-size: 1.5rem;
+	margin-bottom: 30px;
+	opacity: 0.8;
+	text-align: center;
+}
+.fc-cards{
+	position: relative;
+}
+.fc-cards img{
+	max-width: 100%
+}
+.fc-cards-text{
+	max-width: 650px;
+	background-color: white;
+	padding: 10px;
+	position: absolute;
+	left: 30%;
+	bottom: 0%;
+}
+.fc-cards-text h1{
+	font-size: 1.2rem;
+	opacity: 0.8;
+}
+.fc-cards-text p{
+	font-size: 1rem;
+	opacity: 0.8;
+	line-height: 23px;
+	padding: 10px 0px;
+}
+.read{
+	text-decoration: none;
+	font-size: 0.9rem;
+	color: goldenrod;
+}
+.read:hover{
+	text-decoration: underline;
+}
+
+/* second content */
+.second-content{
+	width: 90%;
+	margin: 0 auto;
+	padding: 30px 0px 50px;
+}
+.sc-header{
+	font-size: 1.5rem;
+	margin-bottom: 30px;
+	opacity: 0.8;
+}
+.sc-container{
+	display: flex;
+	justify-content: space-between;
+	overflow-x: scroll;
+	scrollbar-width: thin;
+}
+.img-gallery{
+	margin: 0px 20px 0px 0px;
+	background:  linear-gradient(145deg, rgb(156, 91, 118)0%, rgba(110, 116, 142, 1)90%);
+	width: 350px;
+}
+.img-gallery-text{
+	text-align: center;
+	padding: 10px 0px;
+	color: #fff;
+}
+
+/* third content */
+.third-content{
+	width: 100%;
+	margin: 0 auto;
+	padding: 50px 0px 70px;
+	background:  linear-gradient(145deg, rgb(228, 205, 151)0%, rgb(133, 142, 181)90%);
+}
+.tc-header{
+	font-size: 1.5rem;
+	margin-bottom: 30px;
+	color: white;
+	text-align: center;
+}
+.tc-container{
+	display: flex;
+	justify-content: space-evenly;
+
+}
+.price-card {
+    max-width: 250px;
+    margin: 0 auto;
+	background-color: #fff;
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.574);
+}
+.price-card img{
+	width: 100%;
+}
+.price-card-text{
+	text-align: center;
+	padding: 15px 10px;
+	line-height: 23px;
+}
+.price-card-text h2{
+	font-size: 1rem;
+	padding: 10px 0px;
+	opacity: 0.8;
+}
+.price-card-text h3{
+	font-size: 1rem;
+	opacity: 0.8;
+	color: rgb(28, 135, 28);
+}
+.price-card-text p{
+	font-size: 1rem;
+	padding: 5px 0px 20px;
+	opacity: 0.8;
+}
+.btnCard{
+	font-size: 1rem;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.842);
+	padding: 8px 80px;
+	border-radius: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.btnCard:hover{
+	background-color: #000;
+}
+
+/* fourth content */
+.fourth-content{
+	width: 90%;
+	margin: 0 auto;
+	padding: 50px 0px;
+}
+.ftc-header{
+	font-size: 1.5rem;
+	margin-bottom: 30px;
+	opacity: 0.8;
+}
+.accordion-head{
+	font-size: 1rem !important;
+}
+.accordion-text{
+	font-size: 1rem !important;
+	opacity: 0.8;
+}
+
+/* footer */
+footer{
+	background-color: rgba(230, 230, 230, 0.616);
+}
+.footer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 25px;
+}
+.left ul{
+	margin-top: 10px;
+	list-style-type: none;
+}
+.left ul li{
+	display: inline-block;
+	margin-right: 10px;
+}
+.left ul li a{
+	font-size: 1rem;
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.886);
+	font-weight: lighter;
+}
+.left ul li a:hover{
+	text-decoration: underline;
+}
+
+.fa-arrow-up{
+	text-decoration: none;
+	color: #000;
+	font-size: 1.2rem;
+}
+.backToTop{
+	text-align: center;
+	animation: upDown 1s ease infinite alternate-reverse;
+}
+
+.right{
+	text-align: right;
+}
+
+
+
+a .fa-facebook-square,
+a .fa-twitter-square,
+a .fa-instagram-square,
+a .fa-pinterest-square {
+	font-size: 2rem;
+	padding: 8px 10px;
+	border-radius: 5px;
+	color: black;
+	opacity: 0.8;
+}
+a .fa-facebook-square:hover,
+a .fa-twitter-square:hover,
+a .fa-instagram-square:hover,
+a .fa-pinterest-square:hover {
+  background-color: rgba(96, 94, 94, 0.3);
+}
+
+.right p {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.886);
+  opacity: 0.9;
+  letter-spacing: 1px;
+}
+
+
+/* media query */
+@media screen and (max-width: 600px) {
+  .btnH {
+    display: none;
+  }
+
+  #menuIcon {
+    display: block;
+  }
+
+  nav .fa-times {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: 0;
+    right: -50%;
+    background: linear-gradient(145deg, rgba(110, 116, 142, 1)0%, rgba(255, 197, 38, 1)90%);
+    width: 50%;
+    height: 100vh;
+    z-index: 1;
+  }
+
+  nav ul li {
+    display: block;
+    padding: 30px 0px 0px 10px;
+  }
+
+
+  /* first content */
+  .first-content {
+    padding: 0px 35px;
+  }
+
+  .fc-cards-text {
+    margin-top: 10px;
+    position: unset;
+  }
+
+  /*  second content */
+  .second-content{
+	padding: 10px 0px 50px;
+}
+  .sc-header{
+	text-align: center;
+}
+
+  /* third content */
+  .tc-header {
+    margin-bottom: 40px;
+  }
+
+  .tc-container {
+    flex-direction: column;
+  }
+
+  .price-card {
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  /* footer */
+  .footer {
+    display: block;
+  }
+
+  .left ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .left {
+    text-align: left;
+    margin: 0px;
+  }
+
+  .right {
+    text-align: left;
+  }
+
+  .backToTop {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.696);
+  }
+
+  a .fa-facebook-square,
+  a .fa-twitter-square,
+  a .fa-instagram-square,
+  a .fa-pinterest-square {
+    padding: 10px 10px 10px 0px;
+  }
+
+/* Headings size */
+  .fc-header,
+  .sc-header,
+  .tc-header,
+  .ftc-header{
+    font-size: 1.4rem; 
+	text-align: center;
+  }
+
+  .fc-cards-text h1 {
+    font-size: 1rem;
+  }
+
+  .price-card-text h2 {
+    font-size: 1.2rem;
+  }
+}
