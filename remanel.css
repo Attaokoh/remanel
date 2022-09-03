@@ -369,7 +369,7 @@ a .fa-pinterest-square:hover {
 @media screen and (max-width: 600px) {
 	header {
 		position: unset;
-	  }
+	}
 	.hero-section-text p {
 		padding: 10px 20px 40px;
 	}
