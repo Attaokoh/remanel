@@ -183,8 +183,8 @@ nav .fa-times{
 }
 .read{
 	text-decoration: none;
-	font-size: 0.9rem;
-	color: goldenrod;
+	font-size: 1rem;
+	color: rgb(235, 173, 14);
 }
 .read:hover{
 	text-decoration: underline;
@@ -255,9 +255,9 @@ nav .fa-times{
 	opacity: 0.8;
 }
 .price-card-text h3{
-	font-size: 1rem;
+	font-size: 0.9rem;
 	opacity: 0.8;
-	color: rgb(28, 135, 28);
+	color: rgb(19, 1, 1);
 }
 .price-card-text p{
 	font-size: 1rem;
@@ -293,6 +293,7 @@ nav .fa-times{
 }
 .accordion-head{
 	font-size: 1rem !important;
+	opacity: 0.9;
 }
 .accordion-text{
 	font-size: 1rem !important;
@@ -371,7 +372,7 @@ a .fa-pinterest-square:hover {
 
 
 /* media query */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 	header {
 		position: unset;
 	}
